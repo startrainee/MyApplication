@@ -19,7 +19,8 @@
                 android:background="@color/next_background"
                 android:alpha="0.3"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"/>
+                android:layout_alignParentEnd="true"
+                android:onClick="startSecondActivity"/>
     </RelativeLayout>
     <RelativeLayout android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -33,7 +34,8 @@
                    android:src="@drawable/right"
                    android:layout_marginEnd="30dp"
                    android:layout_alignParentEnd="true"
-                   android:contentDescription="@string/image_view"/>
+                   android:contentDescription="@string/image_view"
+        android:onClick="startSecondActivity"/>
     </RelativeLayout>
 
 </RelativeLayout>

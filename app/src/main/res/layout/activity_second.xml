@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+
+    </android.support.v7.widget.Toolbar>
+    <!-- <LinearLayout
+             android:id="@+id/head"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_alignParentTop="true">
+         <include
+                 android:id="@+id/second_head"
+                 layout="@layout/activity_head"/>
+         <View
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="#010f0f"
+                 android:layout_marginTop="5dp"/>
+
+     </LinearLayout>-->
+    <!-- <LinearLayout android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+         <TextView android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text="hello" android:id="@+id/textView2"/>
+     </LinearLayout>-->
+
+
+    <LinearLayout
+            android:id="@+id/foot"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#010f0f"
+                android:layout_marginBottom="5dp"/>
+        <include
+                android:id="@+id/second_foot"
+                layout="@layout/activity_foot"/>
+    </LinearLayout>
+
+</RelativeLayout>

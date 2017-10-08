@@ -5,4 +5,6 @@
     <color name="colorAccent">#FF4081</color>
     <color name="entrance_background">#2E3639</color>
     <color name="next_background">#D1D3D3</color>
+    <color name="btn_background">#D1D3D3</color>
+
 </resources>
