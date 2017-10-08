@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/toolbar_color"
+            toolbar:title=" "
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+        <LinearLayout
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginEnd="15dp"
+                android:layout_alignParentStart="true"
+                android:background="#ffffff">
+            <EditText android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="5"
+                      android:hint="   搜索   "/>
+            <ImageView
+                    android:layout_margin="5dp"
+                    android:id="@+id/search_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/search_btn_bg"
+                    android:contentDescription="@string/image_view"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/menu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentEnd="true">
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/toolbar_color">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="16sp"
+                      android:textColor="@color/textColor"
+                      android:layout_margin="10dp"
+                      android:text="精选"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10dp"
+                      android:textSize="16sp"
+                      android:textColor="@color/textColor"
+                      android:text="电视剧"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10dp"
+                      android:textSize="16sp"
+                      android:textColor="@color/textColor"
+                      android:text="电影"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10dp"
+                      android:textSize="16sp"
+                      android:textColor="@color/textColor"
+                      android:text="综艺"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10dp"
+                      android:textSize="16sp"
+                      android:textColor="@color/textColor"
+                      android:text="纪录片"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10dp"
+                      android:textSize="16sp"
+                      android:textColor="@color/textColor"
+                      android:text="真人秀"/>
+        </LinearLayout>
+    </ScrollView>
+    <GridLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:layout_below="@+id/menu"
+                android:layout_alignParentStart="true">
+    <ImageView
+                android:id="@+id/num1_1"
+                android:layout_width="142dp"
+                android:layout_height="168dp"
+                android:src="@drawable/cover_dayandnight"
+                android:contentDescription="@string/image_view"
+                android:layout_rowWeight="1"
+        />
+        <GridLayout
+                android:id="@+id/num1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rowCount="8"
+                android:layout_rowWeight="1"
+                android:padding="10dp"
+                android:orientation="vertical">
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/textColor"
+                      android:text="白夜追凶"/>
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/textColor"
+                      android:text="导演"/>
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/textColor"
+                      android:text="年份"/>
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/textColor"
+                      android:text="演员表"/>
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/textColor"
+                      android:text=" "/>
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/textColor"
+                      android:text=" "/>
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/textColor"
+                      android:text=" "/>
+
+            <LinearLayout
+                    android:id="@+id/num2_1"
+                    android:layout_width="236dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:orientation="horizontal">
+                <Button android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/textColor"
+                        android:background="#F7F052"
+                        android:text="立即播放"
+                        android:id="@+id/button2"/>
+                <TextView android:id="@+id/other_text"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textColor="#212121"
+                          android:layout_marginLeft="30dp"
+                          android:text="会员专享"/>
+            </LinearLayout>
+        </GridLayout>
+    </GridLayout>
+       <GridLayout
+                android:id="@+id/movie_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_below="@id/content"
+                android:columnCount="5"
+                android:rowCount="2">
+            <TextView android:id="@+id/count1"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_columnWeight="1"
+                      android:padding="10dp"
+                      android:textColor="#212121"
+                      android:text="1"/>
+            <TextView android:id="@+id/count2"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_columnWeight="1"
+                      android:layout_rowWeight="1"
+                      android:textColor="#212121"
+                      android:padding="10dp"
+                      android:text="2"/>
+            <TextView android:id="@+id/count3"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_columnWeight="1"
+                      android:layout_rowWeight="1"
+                      android:textColor="#212121"
+                      android:padding="10dp"
+                      android:text="3"/>
+            <TextView android:id="@+id/count4"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_columnWeight="1"
+                      android:layout_columnSpan="1"
+                      android:textColor="#212121"
+                      android:padding="10dp"
+                      android:text="4"/>
+            <TextView android:id="@+id/count5"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_columnWeight="1"
+                      android:layout_columnSpan="1"
+                      android:textColor="#212121"
+                      android:padding="10dp"
+                      android:text="..."/>
+            <TextView android:id="@+id/count6"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_columnWeight="1"
+                      android:layout_columnSpan="1"
+                      android:padding="10dp"
+                      android:textColor="#212121"
+                      android:text="6"/>
+            <TextView android:id="@+id/count7"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_columnWeight="1"
+                      android:layout_columnSpan="1"
+                      android:padding="10dp"
+                      android:textColor="#212121"
+                      android:text="7"/>
+            <TextView android:id="@+id/count8"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_columnWeight="1"
+                      android:layout_columnSpan="1"
+                      android:padding="10dp"
+                      android:textColor="#212121"
+                      android:text="8"/>
+            <TextView android:id="@+id/count9"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_columnWeight="1"
+                      android:layout_columnSpan="1"
+                      android:textColor="#212121"
+                      android:padding="10dp"
+                      android:text="9"/>
+            <TextView android:id="@+id/count0"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_columnWeight="1"
+                      android:layout_columnSpan="1"
+                      android:padding="10dp"
+                      android:textColor="#212121"
+                      android:text="10"/>
+    </GridLayout>
+
+    <LinearLayout
+            android:id="@+id/foot"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:alpha="1"
+            android:layout_marginBottom="5dp">
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#010f0f"
+                android:layout_marginBottom="5dp"/>
+        <include
+                android:id="@+id/second_foot"
+                layout="@layout/activity_foot"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
