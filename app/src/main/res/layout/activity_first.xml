@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/root_first"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -12,16 +13,17 @@
             android:layout_marginTop="30dp"
             android:layout_alignParentEnd="true">
         <Button
-                android:text="@string/for_test"
+                android:id="@+id/jump_btn"
+                android:background="@color/next_background"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:id="@+id/button"
                 android:layout_marginEnd="30dp"
-                android:background="@color/next_background"
-                android:alpha="0.3"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
+                android:text="@string/for_test"
+                android:textSize="20sp"
+                android:textColor="@color/textColor"
+                android:alpha="0.3"
                 android:onClick="startSecondActivity"/>
     </RelativeLayout>
     <RelativeLayout android:layout_width="match_parent"
@@ -31,13 +33,15 @@
                     android:layout_marginBottom="60dp"
                     android:background="@color/next_background"
                     android:alpha="0.3">
-        <ImageView android:layout_width="30dp"
+        <ImageView
+                    android:id="@+id/next_bg_btn"
+                    android:layout_width="30dp"
                    android:layout_height="100dp"
-                   android:src="@drawable/right"
+                   android:src="@mipmap/right"
                    android:layout_marginEnd="30dp"
                    android:layout_alignParentEnd="true"
                    android:contentDescription="@string/image_view"
-                    android:onClick="startSecondActivity"/>
+                    android:onClick="changeBackGround"/>
     </RelativeLayout>
 
 </RelativeLayout>

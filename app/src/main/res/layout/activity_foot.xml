@@ -8,7 +8,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:src="@drawable/home"
+            android:src="@mipmap/home"
             android:contentDescription="@string/image_view"
             android:id="@+id/home"/>
     <ImageView
@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:src="@drawable/heart"
+            android:src="@mipmap/heart"
             android:contentDescription="@string/image_view"
     />
     <ImageView
@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:src="@drawable/fire"
+            android:src="@mipmap/fire"
             android:contentDescription="@string/image_view"
     />
     <ImageView
@@ -32,6 +32,6 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:src="@drawable/head"
+            android:src="@mipmap/head"
             android:contentDescription="@string/image_view"/>
 </LinearLayout>

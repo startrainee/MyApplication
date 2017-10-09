@@ -8,4 +8,5 @@
     <color name="btn_background">#D1D3D3</color>
     <color name="toolbar_color">#D1D3D3</color>
     <color name="textColor">#101010</color>
+    <color name="textColor2">#212121</color>
 </resources>

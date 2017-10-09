@@ -3,22 +3,19 @@ package com.wangchongyang.myapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.View;
 
-public class ThirdActivity extends AppCompatActivity {
+public class FiveActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_thrid);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setContentView(R.layout.activity_four);
     }
-    public void startFourActivity(View view) {
+
+    public void startFiveActivity(View view) {
         Intent intent = new Intent();
-        intent.setClass(this,FourActivity.class);
+        intent.setClass(this,FiveActivity.class);
         startActivity(intent);
     }
 }

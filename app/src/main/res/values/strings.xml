@@ -2,4 +2,5 @@
     <string name="app_name">MyApplication</string>
     <string name="for_test">跳过测试</string>
     <string name="image_view">main</string>
+    <string name="search_text">搜索</string>
 </resources>

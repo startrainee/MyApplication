@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="2">
+
+    <VideoView
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarOfFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="25dp"
+            toolbar:title="白夜追凶"
+            toolbar:subtitle="优酷平台首播，会员抢先看大结局">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="1">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:text="剧情"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    />
+            <TextView
+                    android:text="下载"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_alignParentEnd="true"
+                    />
+        </RelativeLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:rowCount="1"
+                android:columnCount="5">
+
+            <TextView
+                    android:text="1"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    />
+            <TextView
+                    android:text="2"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    />
+            <TextView
+                    android:text="3"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    />
+            <TextView
+                    android:text="4"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    />
+
+            <TextView
+                    android:text="5"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
