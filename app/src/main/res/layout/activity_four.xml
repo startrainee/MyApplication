@@ -5,18 +5,48 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:weightSum="2">
-
-    <VideoView
-            android:id="@+id/video"
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2">
+    <com.wangchongyang.myapplication.myview.MyVideoView
+            android:id="@+id/video_view_four"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"/>
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+</RelativeLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="分享小伙伴"
+            android:onClick="startFiveActivity"
+            />
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="播放"
+            android:onClick="watchVideo"
+            />
 
     <android.support.v7.widget.Toolbar
             android:id="@+id/toolbarOfFour"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingEnd="25dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="30dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
             toolbar:title="白夜追凶"
             toolbar:subtitle="优酷平台首播，会员抢先看大结局">
     </android.support.v7.widget.Toolbar>
@@ -39,6 +69,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
                     />
             <TextView
                     android:text="下载"

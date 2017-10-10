@@ -1,11 +1,14 @@
 package com.wangchongyang.myapplication;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.widget.VideoView;
 
 public class FourActivity extends AppCompatActivity {
 
@@ -27,5 +30,14 @@ public class FourActivity extends AppCompatActivity {
         Intent intent = new Intent();
         intent.setClass(this,FiveActivity.class);
         startActivity(intent);
+    }
+    public void watchVideo(View view){
+        VideoView vv = (VideoView) findViewById(R.id.video_view_four);
+        //MediaController mc = new MediaController(this);
+        String uri = "android.resource://" + getPackageName() + "/" + R.raw.myvideo;
+        Log.d("fourActivity","video uri : " + uri);
+        // vv.setMediaController(mc);
+        vv.setVideoURI(Uri.parse(uri));
+        vv.start();
     }
 }

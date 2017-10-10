@@ -23,7 +23,7 @@
         <item name="android:textColor">@color/colorAccent</item>
     </style>
 
-    <style name="Theme.ToolBar.My" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.ToolBar.MyToolbar" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="actionOverflowButtonStyle">@style/ActionButton.Overflow.MyToolbar</item>
         <item name="android:textColor">@color/textColor</item>
         <item name="actionOverflowMenuStyle">@style/popup_menu</item>

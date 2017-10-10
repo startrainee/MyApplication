@@ -12,8 +12,8 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
             android:background="@color/toolbar_color"
-            toolbar:title=" "
-            toolbar:theme="@style/Theme.ToolBar.My"
+            toolbar:title=""
+            toolbar:theme="@style/Theme.ToolBar.MyToolbar"
             app:popupTheme="@style/popup_menu"
             >
     </android.support.v7.widget.Toolbar>

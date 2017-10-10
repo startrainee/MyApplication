@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+                xmlns:app="http://schemas.android.com/tools"
+                android:id="@+id/root_first"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/entrance_background"
+                android:weightSum="1">
+
+    <com.wangchongyang.myapplication.myview.MyVideoView
+            android:id="@+id/video_view_five"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/toolbar_color_light"
+            toolbar:title="百叶追凶"
+            toolbar:theme="@style/Theme.ToolBar.MyToolbar"
+            app:popupTheme="@style/popup_menu"
+            android:alpha="0.5">
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/toolbar_color_light"
+            toolbar:title=""
+            toolbar:theme="@style/Theme.ToolBar.MyToolbar"
+            app:popupTheme="@style/popup_menu"
+            android:alpha="0.5"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="播放"
+                android:textColor="#000"
+                android:onClick="watchVideo"
+                />
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>
