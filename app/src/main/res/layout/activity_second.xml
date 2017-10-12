@@ -25,8 +25,10 @@
             android:layout_marginEnd="10dp"
             android:orientation="horizontal"
             android:layout_below="@+id/toolbar"
+            android:layout_alignParentStart="true"
             android:background="#fff"
-            android:layout_alignParentStart="true">
+            android:focusable="true"
+            android:focusableInTouchMode="true">
         <SearchView android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -40,50 +42,15 @@
                 android:text="@string/search_text"
                 android:layout_weight="1" />
     </LinearLayout>
-    <GridLayout android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/search"
-                android:padding="10dp"
-                android:rowCount="2"
-                android:columnCount="2">
-        <ImageView
-                android:id="@+id/num1_1"
-                android:layout_width="0dp"
-                android:layout_height="200dp"
-                android:src="@drawable/movie_dayandnight"
-                android:contentDescription="@string/image_view"
-                android:layout_columnWeight="1"
-                android:layout_columnSpan = "2"
-                android:onClick="startThirdActivity"
-        />
-        <TextView android:id="@+id/num1_1_text"
-                  android:layout_width="0dp"
-                  android:layout_height="wrap_content"
-                  android:layout_columnWeight="0.1"
-                  android:layout_columnSpan = "2"
-                  android:textColor="#212121"
-                  android:paddingStart="30dp"
-                  android:paddingEnd="30dp"
-                  android:text="白夜追凶"/>
-        <ImageView
-                android:id="@+id/num2_1"
-                android:layout_width="0dp"
-                android:layout_height="200dp"
-                android:src="@drawable/movie_ourfather"
-                android:contentDescription="@string/image_view"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-        />
-        <ImageView
-                android:id="@+id/num2_2"
-                android:layout_width="0dp"
-                android:layout_height="200dp"
-                android:src="@drawable/movie_policeman"
-                android:contentDescription="@string/image_view"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-        />
-    </GridLayout>
+    <GridView
+            android:id="@+id/image_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="1"
+            android:layout_below="@+id/search"
+            android:layout_above="@+id/foot"
+            >
+    </GridView>
 
     <LinearLayout
             android:id="@+id/foot"

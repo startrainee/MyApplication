@@ -3,4 +3,8 @@
     <string name="for_test">跳过测试</string>
     <string name="image_view">main</string>
     <string name="search_text">搜索</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

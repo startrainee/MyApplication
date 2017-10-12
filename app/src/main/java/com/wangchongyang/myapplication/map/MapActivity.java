@@ -1,4 +1,4 @@
-package com.wangchongyang.myapplication;
+package com.wangchongyang.myapplication.map;
 
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
@@ -9,10 +9,11 @@ import android.util.SparseIntArray;
 import android.view.View;
 import android.widget.GridLayout;
 import android.widget.ImageView;
+import com.wangchongyang.myapplication.R;
 
 import java.util.Random;
 
-public class MainActivity extends AppCompatActivity {
+public class MapActivity extends AppCompatActivity {
 
     private SparseIntArray hashMap = new SparseIntArray();
     private int[] barrierNumbs = new int[]{ 105, 106, 107, 108, 109,
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_map);
         init();
     }
 
